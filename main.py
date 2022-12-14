@@ -1,10 +1,8 @@
-# import numpy as np
-# import matplotlib.pyplot as plt
-# from matplotlib import cm
-# from mpl_toolkits.mplot3d import Axes3D
-# from matplotlib.ticker import LinearLocator, FormatStrFormatter
-from src import levelset as ls
+'''
+Level Set - Motion under the mean curvature
+'''
 
+from src import levelset as ls
 
 def get_inputs():
 

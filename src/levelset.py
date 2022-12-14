@@ -1,13 +1,10 @@
-# import time
 import math
 import numpy as np
 import matplotlib.pyplot as plt
 import pylab
-# from pylab import *
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-# from mpl_toolkits.mplot3d import axes3d, Axes3D
 
 
 def get_data(nx = 100,
@@ -18,6 +15,7 @@ def get_data(nx = 100,
             t1 = 0,
             t2 = 0.005):
     '''
+    Allocate inputs
     '''
 
     Data = dict()
@@ -37,8 +35,7 @@ def get_data(nx = 100,
     Data["X"] = np.meshgrid(Data["x"], Data["y"])[0]                # 2-dim X meshgrid
     Data["Y"] = np.meshgrid(Data["x"], Data["y"])[1]                # 2-dim Y meshgrid
     
-    # Data["dt"] = 0.2 * Data["h"]**2                                 # temporal step
-    Data["dt"] = 0.55 * Data["h"]**2                                 # temporal step
+    Data["dt"] = 0.55 * Data["h"]**2                                # temporal step
     Data["t"]  = np.arange(Data["t1"],Data["t2"],Data["dt"])        # time grid
     Data["nt"] = len(Data["t"])                                     # number of temporal nodes 
 
@@ -47,9 +44,10 @@ def get_data(nx = 100,
 
 
 def init_quatrefoil(Data,
-                    ll = -0.8,
-                    fontsize = 14): # altura del quatrefoil
+                    ll = -0.8, # heigth of the quatrefoil
+                    fontsize = 14): 
     '''
+    Initialize the quatrefoil
     '''
 
     # Generate the Quatrefoil
@@ -81,7 +79,6 @@ def init_quatrefoil(Data,
         fmt[l] = np.round(s,2)
     plt.clabel(cs, cs.levels, inline=True, fmt=fmt, fontsize=9)
 
-
     ### Quatrefoil 3D plot  
     ax = fig.add_subplot(122, projection = "3d")
     surf = ax.plot_surface(Data["X"], 
@@ -104,6 +101,7 @@ def init_quatrefoil(Data,
 def motion_under_curvature(Data,
                             setpause = 0.00001): 
     '''
+    Motion under the curvature
     '''
     # Initial U0
     U0 = Data["U0"].copy()
