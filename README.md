@@ -21,8 +21,4 @@ https://user-images.githubusercontent.com/32650107/207723077-d71f69b1-9330-4305-
 Simply run the *main.py* file.
 
 For a very gentle introduction to the Level-Set method, 
-<<<<<<< HEAD
 see [here](http://leonardorocchi.info/topics-pages/math/level-set-method/level-set-method.html)
-=======
-see [here](http://leonardorocchi.info/topics-pages/math/level-set-method/level-set-method.html)
->>>>>>> 0f83668e9d7a2567eee3daccce8d2dcce0968dac
