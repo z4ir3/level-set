@@ -10,7 +10,7 @@ The method has been firstly introduced by **Osher and Sethian** in 1988 for trac
 curvature-dependent evolving interfaces in the setting of **Hamilton-Jacobi equations**.
 
 This repository shows an example of the level set method 
-for tracking the evolving fronts under the mean **curvature**.
+for tracking evolving fronts motion under the mean **curvature**.
 
 
 
