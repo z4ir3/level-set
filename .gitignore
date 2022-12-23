@@ -1,6 +1,4 @@
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
 .DS_Store
 __pycache__
-__init.py__
-!src/plotAnimationExample.py 
+src/__init.py__
+src/plotAnimationExample.py 
