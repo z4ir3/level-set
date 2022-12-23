@@ -3,4 +3,4 @@
 .DS_Store
 __pycache__
 __init.py__
-src/plotAnimationExample.py
+!src/plotAnimationExample.py 
